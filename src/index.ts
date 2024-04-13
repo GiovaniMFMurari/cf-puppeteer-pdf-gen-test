@@ -23,7 +23,7 @@ export default {
 			waitUntil: 'networkidle0',
     });
 
-		const pdf = await  page.pdf({ displayHeaderFooter: true })
+		const pdf = await page.pdf({ displayHeaderFooter: true })
     .then((buff) => {
 			console.log('SUCCESS');
       return buff;
